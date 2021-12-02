@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta charset=utf-8 />
@@ -10,14 +9,15 @@
 <link rel="stylesheet" href="./Development/style.css"/>
 </head>
 <body>
-    <form action="/crewmates.html">
-        <label for="fname"></label>
-        <input type="text" id="fname" name="fname">
-        <button type="submit" value="Submit">Lets Fly!</button>
-      </form>
+<div id='map'></div>
 
+<script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg';
+    var map = L.map('map',{
+        center: [30, 0],
+        zoom: 3
 
-    <!-- });
+    });
     
     L.tileLayer(
         'https://api.mapbox.com/styles/v1/hakki1810/ckwmmq08p69z514oclunhvyfu/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg', {
@@ -36,6 +36,6 @@ var popup = L.popup()
     .setLatLng([23.654, -0.09])
     .setContent("You are Here Heran!")
     .openOn(map);
-    </script> -->
+    </script>
     </body>
     </html>
