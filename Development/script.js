@@ -17,8 +17,6 @@ fetch(`https://api.wheretheiss.at/v1/satellites/25544`)
 
 issdata()
 
-
-
 L.mapbox.accessToken = 'pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg';
     var map = L.map('map',{
         center: [30, 0],
