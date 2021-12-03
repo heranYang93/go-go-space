@@ -167,10 +167,11 @@ body {
 
 .card2 {
   position: relative;
-  border: 40px solid #414a4c;
-  border-radius: 70px;
+  border: 60px solid #414a4c;
+  border-radius: 100px;
   margin-top: 250px;
   left: -650px;
+  box-shadow: #505a5c 20px 20px 20px 10px;
 }
 
 .container {
@@ -179,14 +180,15 @@ body {
 
 .crewmates {
   font-size: 2rem;
-  color: black;
-  background-color: #343636;
+  color:white;
+  background-color: black;
   display: flex;
 }
 
 #h2 {
   justify-content: center;
 }
+<<<<<<< HEAD
 =======
     margin: 0;
     padding: 0;
@@ -331,3 +333,31 @@ video {
     opacity: 0;
 }
 >>>>>>> 377e0aa (reorganised folder structure)
+=======
+
+.members{
+  text-decoration: underline;
+}
+
+
+.flightdata{
+  font-size: 2rem;
+  color:white;
+  background-color: black;
+  display: flex;
+}
+
+.card3{
+  position: relative;
+  border: 60px solid #414a4c;
+  border-radius: 100px;
+  margin-top: -600px;
+  right: -90px;
+  box-shadow: #505a5c 20px 20px 20px 10px;
+  
+
+}
+
+#606c6e
+
+>>>>>>> 9f8a2c4 (added flight data to the crewmates.html)
