@@ -1,378 +1,179 @@
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-#featured {
-    max-height: 100vh;
-    overflow: hidden;
-    text-align: center;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-
-.hero {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.enterApp {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.launchContainer{
-    position: absolute;
-    display: flex;
-    width: 435px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #e9e9e949;
-    border-radius: 50px;
-    height: 60px;
-    padding: 0px 3px 0px 8px;
-    bottom: 300px;
-    z-index: 2;
-}
-
-.launchInput {
-    padding: 4px;
-    flex-grow: 1;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: white;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
-.launchButton {
-    height: 54px;
-    width: 120px;
-    background: #642B73;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f02669, #94326f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #ffffff;
-    text-transform: uppercase;
-    border-style: none;
-    border-radius: 50px;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    
-}
-    
-
-
-.launchButton:hover {
-    cursor: pointer;
-    background: #df417e;  /* fallback for old browsers */
-    transition: all 0.3s ease;
-}
-
-::placeholder {
-    color: rgb(236, 236, 236);
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-}
-
-@media only screen and (max-width: 1570px) {
-   
-    }
-
-@media only screen and (max-width: 380px) {
-
-video {
-    transform: translate(-300px) scale(90%)
-}
-
-#feature {
-    min-width: none;
-}
-
-.launchContainer {
-    bottom: 100px;
-    width: 290px;
-}
-
-.launchInput {
-    width: 30px;
-    margin: 0;
-    font-size: 16px;
-}
-
-.launchButton {
-    width: 108px;
-}
-    }
-
-.shuttleholder {
- width: 100%;
- height: 100vh;
-
-}
-
-.shuttle {
-    width: 100%;
-    object-fit: contain; 
-}
-
-.zoom {
-    opacity: 0;
-}
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#featured {
-  max-height: 100vh;
-  overflow: hidden;
-  text-align: center;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.hero {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.enterApp {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.launchContainer {
-  position: absolute;
-  display: flex;
-  width: 435px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-color: #e9e9e949;
-  border-radius: 50px;
-  height: 60px;
-  padding: 0px 3px 0px 8px;
-  bottom: 300px;
-  z-index: 2;
-}
-
-.launchInput {
-  padding: 4px;
-  flex-grow: 1;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: white;
-  text-align: center;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-.launchButton {
-  height: 54px;
-  width: 120px;
-  background: #642b73; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c6426e,
-    #642b73
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f02669,
-    #94326f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #ffffff;
-  text-transform: uppercase;
-  border-style: none;
-  border-radius: 50px;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.launchButton:hover {
-  cursor: pointer;
-  background: #df417e; /* fallback for old browsers */
-  transition: all 0.3s ease;
-}
-
-::placeholder {
-  color: rgb(236, 236, 236);
-  text-align: center;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 600;
-}
-
-@media only screen and (max-width: 1570px) {
-}
-
-@media only screen and (max-width: 380px) {
-  video {
-    transform: translate(-300px) scale(90%);
+  html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
   }
 
-  #feature {
-    min-width: none;
+  body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
   }
 
-  .launchContainer {
-    bottom: 100px;
-    width: 290px;
+
+  #featured {
+      max-height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      min-width: 100%;
+      min-height: 100%;
+  }
+
+
+  .hero {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .enterApp {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+
+  .launchContainer{
+      position: absolute;
+      display: flex;
+      width: 435px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      background-color: #e9e9e949;
+      border-radius: 50px;
+      height: 60px;
+      padding: 0px 3px 0px 8px;
+      bottom: 300px;
+      z-index: 2;
   }
 
   .launchInput {
-    width: 30px;
-    margin: 0;
-    font-size: 16px;
+      padding: 4px;
+      flex-grow: 1;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+  }
+  .launchButton {
+      height: 54px;
+      width: 120px;
+      background: #642B73;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #f02669, #94326f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 50px;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      
+  }
+      
+
+
+  .launchButton:hover {
+      cursor: pointer;
+      background: #df417e;  /* fallback for old browsers */
+      transition: all 0.3s ease;
+  }
+
+  ::placeholder {
+      color: rgb(236, 236, 236);
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
+  }
+
+  @media only screen and (max-width: 1570px) {
+    
+      }
+
+  @media only screen and (max-width: 380px) {
+
+  video {
+      transform: translate(-300px) scale(90%)
+  }
+
+  #feature {
+      min-width: none;
+  }
+
+  .launchContainer {
+      bottom: 100px;
+      width: 290px;
+  }
+
+  .launchInput {
+      width: 30px;
+      margin: 0;
+      font-size: 16px;
   }
 
   .launchButton {
-    width: 108px;
+      width: 108px;
   }
-}
+      }
 
-.shuttleholder {
+  .shuttleholder {
   width: 100%;
   height: 100vh;
-}
 
-.shuttle {
-  width: 100%;
-  object-fit: contain;
-}
+  }
 
-.zoom {
-  opacity: 0;
-}
+  .shuttle {
+      width: 100%;
+      object-fit: contain; 
+  }
 
-.ISSholder {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+  .zoom {
+      opacity: 0;
+  }
 
-.ISS {
-  width: 100%;
-  object-fit: contain;
-  display: flex;
-}
 
-.card {
-  position: absolute;
-  top: 100px;
-  border: 15px solid #414a4c;
-  border-radius: 20px;
-  left: 40px;
-}
-
-.container {
-  font-size: 2rem;
-}
-
-.card2 {
-  position: relative;
-  border: 60px solid #414a4c;
-  border-radius: 100px;
-  margin-top: 250px;
-  left: -650px;
-  box-shadow: #505a5c 20px 20px 20px 10px;
-}
-
-.container {
-  font-size: 2rem;
-}
-
-.crewmates {
-  font-size: 2rem;
-  color:white;
-  background-color: black;
-  display: flex;
-}
-
-#h2 {
-  justify-content: center;
-}
-
-html {
+  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+  }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-#featured {
+  #featured {
     max-height: 100vh;
     overflow: hidden;
     text-align: center;
     min-width: 100%;
     min-height: 100%;
-}
+  }
 
-
-.hero {
+  .hero {
     height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.enterApp {
+  .enterApp {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-
-
-.launchContainer{
+  .launchContainer {
     position: absolute;
     display: flex;
     width: 435px;
@@ -385,9 +186,9 @@ body {
     padding: 0px 3px 0px 8px;
     bottom: 300px;
     z-index: 2;
-}
+  }
 
-.launchInput {
+  .launchInput {
     padding: 4px;
     flex-grow: 1;
     background-color: transparent;
@@ -395,106 +196,161 @@ body {
     border: none;
     color: white;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 600;
     font-size: 20px;
-}
-.launchButton {
+  }
+  .launchButton {
     height: 54px;
     width: 120px;
-    background: #642B73;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f02669, #94326f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #642b73; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #c6426e,
+      #642b73
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f02669,
+      #94326f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #ffffff;
     text-transform: uppercase;
     border-style: none;
     border-radius: 50px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-    
-}
-    
+  }
 
-
-.launchButton:hover {
+  .launchButton:hover {
     cursor: pointer;
-    background: #df417e;  /* fallback for old browsers */
+    background: #df417e; /* fallback for old browsers */
     transition: all 0.3s ease;
-}
+  }
 
-::placeholder {
+  ::placeholder {
     color: rgb(236, 236, 236);
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 600;
-}
+  }
 
-@media only screen and (max-width: 1570px) {
-   
+  @media only screen and (max-width: 1570px) {
+  }
+
+  @media only screen and (max-width: 380px) {
+    video {
+      transform: translate(-300px) scale(90%);
     }
 
-@media only screen and (max-width: 380px) {
-
-video {
-    transform: translate(-300px) scale(90%)
-}
-
-#feature {
-    min-width: none;
-}
-
-.launchContainer {
-    bottom: 100px;
-    width: 290px;
-}
-
-.launchInput {
-    width: 30px;
-    margin: 0;
-    font-size: 16px;
-}
-
-.launchButton {
-    width: 108px;
-}
+    #feature {
+      min-width: none;
     }
 
-.shuttleholder {
- width: 100%;
- height: 100vh;
+    .launchContainer {
+      bottom: 100px;
+      width: 290px;
+    }
 
-}
+    .launchInput {
+      width: 30px;
+      margin: 0;
+      font-size: 16px;
+    }
 
-.shuttle {
+    .launchButton {
+      width: 108px;
+    }
+  }
+
+  .shuttleholder {
     width: 100%;
-    object-fit: contain; 
-}
+    height: 100vh;
+  }
 
-.zoom {
+  .shuttle {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .zoom {
     opacity: 0;
-}
+  }
 
-.members{
-  text-decoration: underline;
-}
+  .ISSholder {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .ISS {
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+  }
+
+  .card {
+    position: absolute;
+    top: 100px;
+    border: 15px solid #414a4c;
+    border-radius: 20px;
+    left: 40px;
+  }
+
+  .container {
+    font-size: 2rem;
+  }
+
+  .card2 {
+    position: relative;
+    border: 60px solid #414a4c;
+    border-radius: 100px;
+    margin-top: 250px;
+    left: -650px;
+    box-shadow: #505a5c 20px 20px 20px 10px;
+  }
+
+  .container {
+    font-size: 2rem;
+  }
+
+  .crewmates {
+    font-size: 2rem;
+    color:white;
+    background-color: black;
+    display: flex;
+  }
+
+  #h2 {
+    justify-content: center;
+  }
+
+  .members{
+    text-decoration: underline;
+  }
 
 
-.flightdata{
-  font-size: 2rem;
-  color:white;
-  background-color: black;
-  display: flex;
-}
+  .flightdata{
+    font-size: 2rem;
+    color:white;
+    background-color: black;
+    display: flex;
+  }
 
-.card3{
-  position: relative;
-  border: 60px solid #414a4c;
-  border-radius: 100px;
-  margin-top: -600px;
-  right: -90px;
-  box-shadow: #505a5c 20px 20px 20px 10px;
-  
+  .card3{
+    position: relative;
+    border: 60px solid #414a4c;
+    border-radius: 100px;
+    margin-top: -600px;
+    right: -90px;
+    box-shadow: #505a5c 20px 20px 20px 10px;
+    
 
-}
+  }
 
+  .card4{
+    position: absolute;
+    left: 950px;
+    top: 1350px;
+  }
