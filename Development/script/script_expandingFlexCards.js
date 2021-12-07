@@ -148,7 +148,7 @@ function giveHint(hintLocation){
     cardPage.appendChild(hint)
 }
 
-//** (not working) Modal card
+// Render Modal card
 function modalCard(){
     var modalCardIH = `
         <div class="modal-background"></div>
@@ -191,7 +191,7 @@ planetModalClose.addEventListener('click',closeModal)
 
 // Main program ========================================================================
 
-    // Create buttons for each planet
+*    // Create buttons for each planet
 planetArray.forEach(planet => oneCard(planet))
 
 updateFact()
