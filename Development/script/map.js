@@ -2,7 +2,7 @@ L.mapbox.accessToken =
   "pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg";
 var map = L.map("map", {
   center: [0, 0],
-  zoom: 5,
+  zoom: 4,
   minZoom: 3,
   maxZoom: 6,
 });
@@ -40,7 +40,7 @@ function issData() {
 }
 
 var spaceIcon = L.icon({
-  iconUrl:"../assets/media/spaceship3.svg",
+  iconUrl:"../Development/media/spaceship3.svg",
   iconSize: [75, 75],
   iconAnchor: [25, 15],
   popupAnchor: [50, 25],
