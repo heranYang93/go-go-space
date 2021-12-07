@@ -5,22 +5,50 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
    <link rel="stylesheet" href="../Development/script/style/style_expandingFlexCards.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-   
+
    <title>Document</title>
 </head>
 
 <body>
 
    <section class="cardPage">
+      
+      <section id = "facts"></section>
 
       <ul id="cardList"></ul>
 
+      <section class="planetModalWrapper"></section>
+
+      <button id = 'trailbutton'>Trail</button>
+
+      <div id='planetModal' class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+
+            <header class="modal-card-head">
+               <p id = 'planetModalTitle' class="modal-card-title">Modal title</p>
+            </header>
+
+            <section id = 'planetModalContent' class="modal-card-body">
+
+               <section id = 'singlePlanetData'>fasdfadsfasfdsafdasfasdasdfas</section>
+               <section id = 'singlePlanetExplanation'>a*&^%$^&sdfasdfsd</section>
+
+           </section>
+
+           <footer id = 'planetModalFooter' class="modal-card-foot">
+             <button id='closeModal'class="button">Back to Solar System</button>
+           </footer>
+           
+         </div>
+       </div>
+
    </section>
-   
-   <script src = "../Development/script/script_expandingFlexCards.js"></script>
+
+   <script src="../Development/script/script_expandingFlexCards.js"></script>
 
 </body>
 

@@ -1,6 +1,15 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@keyframes hint{
+  0%{opacity: 0}
+  15%{opacity: 0.8;}
+  50%{opacity: 1;}
+  85%{opacity: 0.8;}
+  100%{opacity: 0;}
+}
+
 :root{
   --imageHeight: 10vw;
-  --iconTransitionTime:10s;
+  --iconTransitionTime:6s;
 }
 
 *{
@@ -17,23 +26,17 @@
   z-index:-2;
 }
 
-@keyframes hint{
-  0%{transform: translateY(-10px);opacity: 0;}
-  5%{transform: translateY(-20px);opacity: 1;}
-  15%{transform: translateY(-10px);opacity: 0.2;}
-  30%{transform: translateY(-20px);opacity: 1;}
-  45%{transform: translateY(-10px);opacity: 0.2;}
-  100%{transform: translateY(-10px);opacity: 0;}
-}
-
-#hint{
-  opacity: 0;
-  animation: hint 3s infinite;
-}
-
-#hint:hover{
-  animation: none;
-  opacity: 0;
+#facts > div{
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  animation: hint var(--iconTransitionTime);
+  color: white;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
 }
 
 #cardList {
@@ -53,8 +56,31 @@
 }
 
 #cardList > li> .card-image> .image :hover{
-  transform: rotate(20deg) scale(120%);
+  transform: rotate(5deg) scale(110%);
   transition: ease-in-out var(--iconTransitionTime);
+}
+
+.modal-card > *{
+  background-color: black;
+}
+
+#planetModalTitle{
+  text-align: center;
+}
+
+#planetModalContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#planetModalContent > *{
+  background-color: aqua;
+}
+
+#planetModalFooter{
+  display: flex;
+  justify-content: center;
 }
 
 .centered{
