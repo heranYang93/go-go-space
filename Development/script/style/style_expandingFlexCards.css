@@ -60,29 +60,37 @@
   transition: ease-in-out var(--iconTransitionTime);
 }
 
-.modal-card > *{
-  background-color: black;
+#planetModalHead{
+  text-align: center;
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
 }
 
-#planetModalTitle{
-  text-align: center;
+#planetModalHead>*{
+  color: rgb(219, 219, 219);
 }
 
 #planetModalContent{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
 }
 
 #planetModalContent > *{
-  background-color: aqua;
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
 }
 
 #planetModalFooter{
   display: flex;
   justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
 }
 
-.centered{
-  text-align: center;
+#closeModal{
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
 }
