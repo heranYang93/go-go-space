@@ -2,7 +2,12 @@
 const cardPage = document.querySelector('.cardPage')
 const cardsParent = document.getElementById('cardList')
 const factsEl = document.getElementById('facts')
-const trailBtn = document.getElementById('modalTrail')
+const trailBtn = document.getElementById('trailbutton')
+const planetModalOpen = document.getElementById('trailbutton')
+const planetModalClose = document.getElementById('closeModal')
+const planetModalTitleEl = document.getElementById('planetModalTitle')
+const planetModalContentEl = document.getElementById('planetModalContent')
+
 //URLs
 // all known count by object type
 const byTypeURL = 'https://api.le-systeme-solaire.net/rest/knowncount/'
@@ -10,8 +15,10 @@ const byTypeURL = 'https://api.le-systeme-solaire.net/rest/knowncount/'
 const byBody = 'https://api.le-systeme-solaire.net/rest/bodies/'
 // planets
 const planetArray = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune']
-// an array of facts about 
-var factArray
+// an array of facts
+var factArray = ['']
+var factCount = 0
+var planetFact
 
 // Functions ========================================================================
 
@@ -27,7 +34,7 @@ async function getDataByType(){
         })
 
         .then(function(data){
-            countData = data.knowncount
+            countData = data.knowncount.slice(0,4)
         })
 
         .catch(function(error){
@@ -54,16 +61,24 @@ function formulateFacts(countData){
 }
 
 //render facts to the pages
-function renderFacts(factArray){
-
+function renderFacts(){
+    // setTimeout(function(){factsEl.innerHTML= ''}, 5000);
+    factsEl.innerHTML= ''
+    factArray = JSON.parse(localStorage.getItem("facts"))
+    factLength = factArray.length
+    thisFact = factArray[factCount%factArray.length]
+    factCount ++
+    var addedLine = document.createElement('div')
+    addedLine.innerHTML = thisFact
+    factsEl.appendChild(addedLine)
 }
 
 // Update facts
 async function updateFact(){
 
     var countDataByType = await getDataByType()
-    var factArray = formulateFacts(countDataByType)
-    renderFacts(factArray)
+    factArray = formulateFacts(countDataByType)
+    localStorage.setItem("facts", JSON.stringify(factArray));
 
 }
 
@@ -97,9 +112,9 @@ function oneCard (str) {
     var pictureLink = `../Development/media/${str}.jpg`
     var thisInnerHTMLContent = `
     <div class = 'card-image'>
-    <figure class='image is-1by1'>
-        <img src='${pictureLink}' id='${str}' alt='A picture of ${str}'>
-    </figure>
+        <figure class='image is-1by1'>
+            <img src='${pictureLink}' id='${str}' alt='A picture of ${str}'>
+        </figure>
     </div>
 
     <div class = 'card-content'>
@@ -157,9 +172,28 @@ function modalCard(){
     cardPage.appendChild(modalCard)
 }
 
+function displayModal(){
+    planetModal.setAttribute('class','modal is-active')
+}
+
+function closeModal(){
+    planetModal.setAttribute('class','modal')
+}
+
+function renderPlanetModal(){
+
+}
+
+// Button ========================================================================
+
+planetModalOpen.addEventListener('click',displayModal)
+planetModalClose.addEventListener('click',closeModal)
+
 // Main program ========================================================================
 
     // Create buttons for each planet
 planetArray.forEach(planet => oneCard(planet))
 
 updateFact()
+
+setInterval(renderFacts, 6000)
