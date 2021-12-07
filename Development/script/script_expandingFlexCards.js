@@ -1,16 +1,97 @@
-var cardPage = document.querySelector('.cardPage')
-var cardsParent = document.getElementById('cardList')
-
-
-const hintInnerHTML = `
-        <div class='hintWrapper'>
-            <p>Click to read more ...</p>
-            <div class="hint" id="hint" onmouseout="javascript:removeHover('hint');"></div>
-        </div>
-    `
+//existing DOM elements
+const cardPage = document.querySelector('.cardPage')
+const cardsParent = document.getElementById('cardList')
+const factsEl = document.getElementById('facts')
+const trailBtn = document.getElementById('modalTrail')
+//URLs
+// all known count by object type
+const byTypeURL = 'https://api.le-systeme-solaire.net/rest/knowncount/'
+// obect data by body
+const byBody = 'https://api.le-systeme-solaire.net/rest/bodies/'
+// planets
 const planetArray = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune']
+// an array of facts about 
+var factArray
 
-// create single card for one planet
+// Functions ========================================================================
+
+// (v) Get how many bodies we have discovered so far - return count data
+async function getDataByType(){
+
+    var countData
+
+    var temp = await fetch(byTypeURL)
+
+        .then(function(response){
+            return response.json()
+        })
+
+        .then(function(data){
+            countData = data.knowncount
+        })
+
+        .catch(function(error){
+            alert('Error')
+        })
+    
+    return (countData)
+}
+
+// formulate facts
+function formulateFacts(countData){
+
+    factArray = []
+    
+    for (i in countData){
+        var thisType = countData[i].id
+        var thisCount = countData[i].knownCount
+        var thisUpdateDate = countData[i].updateDate
+        var thisString = `Until ${thisUpdateDate}, ${thisCount} ${thisType}s have been discovered`
+        factArray.push(thisString)
+    }
+
+    return (factArray)
+}
+
+//render facts to the pages
+function renderFacts(factArray){
+
+}
+
+// Update facts
+async function updateFact(){
+
+    var countDataByType = await getDataByType()
+    var factArray = formulateFacts(countDataByType)
+    renderFacts(factArray)
+
+}
+
+// (v) Get data of one specific planet
+async function getDataByPlanet(planetStr){
+
+    thisPlanetDataURL = byBody + planetStr
+
+    var planetData
+
+    var temp = await fetch(thisPlanetDataURL)
+
+        .then(function(response){
+            return response.json()
+        })
+
+        .then(function(data){
+            planetData = data
+        })
+
+        .catch(function(error){
+            alert('Error')
+        })
+
+    return(planetData)
+}
+
+// (v) create single card for one planet
 function oneCard (str) {
     var thisCard = document.createElement('li')
     var pictureLink = `../Development/media/${str}.jpg`
@@ -29,6 +110,7 @@ function oneCard (str) {
     cardsParent.appendChild(thisCard)
 }
 
+// (v) Get the position of a element with id = str
 function getPos (str){
     var posArray = [0,0,0]
     var sampleEl = document.getElementById(str)
@@ -39,6 +121,7 @@ function getPos (str){
     return posArray
 }
 
+// Render a click me hint over the indicated location
 function giveHint(hintLocation){
     console.log(hintLocation)
     var hint = document.createElement('div')
@@ -50,11 +133,33 @@ function giveHint(hintLocation){
     cardPage.appendChild(hint)
 }
 
+//** (not working) Modal card
+function modalCard(){
+    var modalCardIH = `
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                afdsaasdfad
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+            </footer>
+        </div>
+    `
+    var modalCard = document.createElement('div')
+    modalCard.innerHTML=modalCardIH
+    modalCard.setAttribute('class','modal')
+    cardPage.appendChild(modalCard)
+}
 
-// Main function
+// Main program ========================================================================
+
     // Create buttons for each planet
 planetArray.forEach(planet => oneCard(planet))
-    //get Mars location
-hintLocation = getPos('Mars')
-    //render hint
-giveHint(hintLocation)
+
+updateFact()
