@@ -1,4 +1,4 @@
-break {
+
 
 L.mapbox.accessToken =
   "pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg";
