@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Space</title>
+    <link rel="stylesheet" href="../assets/styles/style_expandingFlexCards.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
@@ -16,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet"
   />
-
+    
    
     <link
       href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
@@ -24,7 +25,10 @@
     />
     <link rel="stylesheet" href="../assets/styles/nav.css">
     <link rel="icon" type="image/x-icon" href="../assets/media/favicon.ico">
+    
+
   </head>
+  
   <body>
 
     <!-- ----------------------------------------------------- -->
@@ -409,8 +413,37 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
         </div>
         <div id="map" class="mapholder"></div>
       </div>
-
-      <div id="planetcardholderid" class="planetcardholder"></div>
+      
+      <div id="planetcardholder" class="planetcardholder">
+      
+        <section id="facts"></section>
+      
+        <ul id="cardList"></ul>
+      
+        <div id='planetModal' class="modal">
+          <div class="modal-background"></div>
+      
+          <div class="modal-card">
+      
+            <header id='planetModalHead' class="modal-card-head">
+              <p id='planetModalTitle' class="modal-card-title">Modal title</p>
+            </header>
+      
+            <section id='planetModalContent' class="modal-card-body">
+              <div id='singlePlanetDataImg'></div>
+              <div id='singlePlanetExplanation'></div>
+              <div id='singlePlanetData'></div>
+            </section>
+      
+            <footer id='planetModalFooter' class="modal-card-foot">
+              <button id='closeModal' class="button">Back</button>
+            </footer>
+      
+          </div>
+      
+        </div>
+      
+      </div>
       
       <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
       <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
@@ -418,6 +451,7 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
       <script src="../assets/js/map.js"></script>
       <script src="../assets/js/crewmates.js"></script>
       <script src="../assets/js/menu.js"></script>
+      <script src="../assets/js/script_expandingFlexCards.js"></script>
     </main>
   </body>
 </html>
