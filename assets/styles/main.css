@@ -1,0 +1,657 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 8px;
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.abyss {
+  height: 100vh;
+  width: 100%;
+  background-color: #000103;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkplanet {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.abysstext {
+  position: absolute;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  animation-name: load;
+  animation-delay: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-duration: 500ms;
+  padding-right: 33px;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.issspace {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.svgarrow {
+  fill: white;
+  transform: translate(406px, -285px) rotate(11deg) scale(60%);
+  position: absolute;
+  z-index: 2;
+}
+
+.svgarrowtwo {
+  fill: white;
+  transform: translate(-544px, 284px) rotate(4deg) scale(70%);
+  z-index: 2;
+  position: absolute;
+}
+
+.svgplanetone {
+  transform: translate(89px, -342px) scale(0.7);
+}
+
+.svgplanetone {
+  transform: translate(-22px, 263px) scale(0.8);
+}
+
+.crewmates {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.svgplanetone {
+  position: absolute;
+  z-index: 3;
+  fill: white;
+  transform: translate(-218px, -342px) scale(0.7);
+}
+
+.svgplanettwo {
+  position: absolute;
+  z-index: 3;
+  fill: white;
+  transform: translate(705px, 263px) scale(0.8);
+}
+
+.crewmateslistholder {
+  width: 20%;
+  min-height: 80%;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  min-width: 295px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+  border: solid 1px white;
+  margin: 20px;
+  margin-right: 42px;
+}
+
+.crewmatelist {
+  padding-left: 40px;
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.astrobutton {
+  background-color: transparent;
+  border: none;
+  width: 1300px;
+  transition: all 0.3s ease-out;
+}
+
+.astrobutton:hover {
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.astronautimgholder {
+  height: 80%;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.astronautimgline {
+  width: 50%;
+  transition: ease-in-out;
+  animation-name: astrohover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes astrohover {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.mapsection {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url(https://news.microsoft.com/wp-content/uploads/prod/sites/56/2020/10/Space_1-1000x563-1-960x563.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#map {
+  width: 70%;
+  height: 80%;
+  margin: 20px;
+  border-radius: 20px;
+  min-width: 295px;
+  border: solid 1px white;
+  z-index: 1;
+}
+
+.dataholder {
+  width: 20%;
+  height: 80%;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.822);
+  border-radius: 20px;
+  min-width: 295px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 1px white;
+  padding-left: 40px;
+}
+
+.flightdatalist {
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.crewmateslisttitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px rgb(214, 214, 214);
+}
+
+.datatitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+.gradientbreak {
+  background: transparent;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  width: 100%;
+  height: 100px;
+}
+
+.break {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+.planetcardholder {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(153, 231, 122);
+}
+@media only screen and (max-width: 1024px) {
+  .darkplanet {
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .mapsection {
+    height: auto;
+  }
+
+  #map {
+    height: 650px;
+    width: 80%;
+  }
+
+  .dataholder {
+    height: 650px;
+    width: 80%;
+  }
+
+  .flightdatalist {
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .crewmates {
+    height: auto;
+  }
+
+  .crewmateslistholder {
+    height: 650px;
+    margin-bottom: 150px;
+    width: 80%;
+    margin: 0px;
+    margin-bottom: 200px;
+  }
+
+  .astronautimgline {
+    width: auto;
+  }
+
+  .astronautimgholder {
+    height: auto;
+    width: auto;
+    margin-bottom: 100px;
+  }
+
+  .astrobutton {
+    width: auto;
+  }
+
+  .datatitle {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  .imgholder {
+    padding: 0px;
+  }
+
+  .abysstext {
+    padding: 0;
+    padding-bottom: 25px;
+  }
+
+  .darkplanet {
+    padding: 0;
+  }
+
+  .svgarrow {
+    transform: translate(357px, -406px) rotate( 
+      11deg) scale(60%);
+  }
+
+  .svgarrowtwo {
+    transform: translate(-379px, 527px) rotate( 
+      4deg) scale(75%);
+  }
+
+  .svgplanetone {
+    transform: translate(271px, 51px) scale(0.7);
+  }
+
+  .svgplanettwo {
+    transform: translate(-320px, 739px) scale(0.8);
+  }
+
+  .break {
+    height: 325px;
+
+  }
+
+  .soyuzcontainer {
+    padding-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .darkplanet {
+    height: auto;
+    width: 100%;
+  }
+
+  .mapsection {
+    height: auto;
+  }
+
+  #map {
+    height: 650px;
+    /* width: 70%; */
+  }
+
+  .dataholder {
+    height: 650px;
+    width: 80%;
+  }
+
+  .flightdatalist {
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .crewmateslistholder {
+    margin-top: 100px;
+    margin-bottom: 160px;
+  }
+  .svgarrow {
+    transform: translate(275px, -420px) rotate(
+      11deg) scale(60%);
+  }
+
+  .svgarrowtwo {
+    transform: translate(-280px, 412px) rotate(
+      4deg) scale(70%);
+  }
+
+  .svgplanetone {
+    transform: translate(228px, 51px) scale(0.6);
+  }
+
+  .svgplanettwo {
+    transform: translate(-257px, 736px) scale(0.7);
+  }
+
+  .soyuzcontainer {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .svgarrow {
+    transform: translate(152px, -243px) rotate( 
+11deg) scale(50%);}
+
+.svgarrowtwo {
+  transform: translate(-116px, 434px) rotate( 
+4deg) scale(70%);
+}
+
+.svgplanetone {
+  transform: translate(124px, 148px) scale(0.6);
+}
+
+.svgplanettwo {
+  transform: translate(-117px, 709px) scale(0.7);
+}
+
+}
+
+@media only screen and (max-width: 380px) {
+  .darkplanet {
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .abysstext {
+    padding: 0;
+  }
+
+  .mapsection {
+    height: auto;
+  }
+
+  #map {
+    width: 90%;
+    height: 98vh;
+    margin: 10px;
+    border-radius: 20px;
+    min-width: 295px;
+    border: solid 1px white;
+  }
+
+  .dataholder {
+    height: 650px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .flightdatalist {
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .astrobutton {
+    width: auto;
+  }
+
+  .crewmateslistholder {
+    margin: 0px;
+    margin-bottom: 225px;
+    width: 90%;
+  }
+
+  li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(214, 214, 214);
+  }
+
+  .datatitle {
+    font-size: 1.2rem;
+  }
+
+  .svgarrow {
+    transform: translate(125px, -306px) rotate(11deg) scale(40%);
+  }
+
+  .svgarrowtwo {
+    transform: translate(-97px, 328px) rotate(4deg) scale(50%);
+  }
+
+  .svgplanetone {
+    transform: translate(85px, 99px) scale(0.4);
+  }
+
+  .svgplanettwo {
+    transform: translate(-97px, 592px) scale(0.5);
+  }
+
+  .soyuzcontainer {
+    padding-top: 100px;
+  }
+}
+
+/* ====================================== */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(104, 104, 104) rgb(46, 46, 46);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(46, 46, 46);
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 68, 68);
+  border-radius: 60px;
+  border: rgb(255, 255, 255);
+  opacity: 0;
+}
+
+/* ====================================== */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5ed891;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #c7c7c7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c7c7c7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.goButton {
+  background-color: black;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+.goButton2 {
+  background-color: black;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+.goButton2:hover {
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.goButton:hover {
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+@media only screen and (max-width: 450px) {
+  .break {
+    height: 230px;
+  }
+}
+
+
+
