@@ -31,17 +31,21 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 
 Where is the ISS has used all the neccessary languages and tools in order to provide a user-friendly interface that has smooth a interactability and efficiency.
 
-1- HTML 5
+1- [HTML](https://html.com/).
 
-2- CSS3
+2- [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
 
-3- Javascript
+3- [Javascript](https://www.javascript.com/)
 
-4- Google fonts
+4- [Jquery](https://jquery.com/)
 
-5- Bulma
+5- [Google fonts](https://fonts.google.com/)
 
-6- Mapbox and LeafletJS
+6- [Bulma](https://bulma.io/)
+
+7- [Mapbox](https://www.mapbox.com/)
+
+8- [LeafletJS](https://leafletjs.com/)
 
 ## Contributors:
 
