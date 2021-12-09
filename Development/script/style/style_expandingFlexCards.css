@@ -13,7 +13,7 @@
 }
 
 *{
-  transition: ease-in-out var(--iconTransitionTime);
+  /* transition: ease-in-out var(--iconTransitionTime); */
   color: silver;
   font-weight: 300;
   font-style: italic;
@@ -57,7 +57,11 @@
 
 #cardList > li> .card-image> .image :hover{
   transform: rotate(5deg) scale(110%);
-  transition: ease-in-out var(--iconTransitionTime);
+  /* transition: ease-in-out var(--iconTransitionTime); */
+}
+
+#planetModal{
+  width:auto
 }
 
 #planetModalHead{
@@ -78,7 +82,14 @@
   color: rgb(219, 219, 219);
 }
 
-#planetModalContent > *{
+#singlePlanetDataWrapper > {
+  width: 30vw;
+  background-color: rgb(27, 27, 27);
+  color: rgb(219, 219, 219);
+}
+
+#singlePlanetExplanationWrapper > {
+  width: 30vw;
   background-color: rgb(27, 27, 27);
   color: rgb(219, 219, 219);
 }
