@@ -2,7 +2,7 @@
 
 ## Description
 
-Do you ever wonder where is the International Space Station (ISS) is? At what altitude is it in, or what speed is it travelling at or even if its close to you? Well the Web Application "Where is the ISS" offers all of these features and even more!
+Have you ever wondered where is the International Space Station (ISS) is? At what altitude is it in, or what speed is it travelling at or even if its close to you? Well the Web Application "Where is the ISS" offers all of these features and even more!
 
 Where is the ISS Web Application that gives its users the full access to monitor the ISS and also have access to the ISS's flight data. In additon, it also provides all the necessary information about the ISS and space such as the bulid of the space craft and current astronauts that are currently onboard the ISS.
 
