@@ -27,6 +27,30 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 
 ## Demonstration of the Web Application
 
+## Technologies Used
+
+Where is the ISS has used all the neccessary languages and tools in order to provide a user-friendly interface that has smooth a interactability and efficiency.
+
+1- HTML 5
+
+2- CSS3
+
+3- Javascript
+
+4- Google fonts
+
+5- Bulma
+
+6- Mapbox and LeafletJS
+
+## Contributors:
+
+* Alistair Houghton - [Github](https://github.com/Alistairhoughton).
+* Heran Yang - [Github](https://github.com/heranYang93).
+* Mohammad Hakki- [Github](https://github.com/Hakki1810).
+
+
+
 ## Link to the deployed application
 
 You can view the deployed application [here](https://heranyang93.github.io/go-go-space/).
@@ -36,4 +60,3 @@ You can view the deployed application [here](https://heranyang93.github.io/go-go
 You can access the Github repository [here](https://github.com/heranYang93/go-go-space).
 
 
-Application uses at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources)
