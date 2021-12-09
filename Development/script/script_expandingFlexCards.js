@@ -7,6 +7,7 @@ const planetModalOpen = document.getElementById('trailbutton')
 const planetModalClose = document.getElementById('closeModal')
 const planetModalTitleEl = document.getElementById('planetModalTitle')
 const planetModalContentEl = document.getElementById('planetModalContent')
+var singlePlanetDataEl = document.getElementById('singlePlanetData')
 
 //URLs
 // all known count by object type
@@ -44,7 +45,30 @@ async function getDataByType(){
     return (countData)
 }
 
-// formulate facts
+async function getSinglePlanetData(str){
+
+    var thisPlanetData
+    var singlePlanetDataURL = `https://api.le-systeme-solaire.net/rest/bodies/${str}`
+
+    var temp = await fetch(singlePlanetDataURL)
+
+    .then(function(response){
+        return response.json()
+    })
+
+    .then(function(data){
+        thisPlanetData = data
+    })
+
+    .catch(function(error){
+        alert('single planet data unavailable')
+    })
+
+return (thisPlanetData)
+
+} 
+
+// (v) formulate facts
 function formulateFacts(countData){
 
     factArray = []
@@ -60,9 +84,8 @@ function formulateFacts(countData){
     return (factArray)
 }
 
-//render facts to the pages
+// (v) render facts to the pages
 function renderFacts(){
-    // setTimeout(function(){factsEl.innerHTML= ''}, 5000);
     factsEl.innerHTML= ''
     factArray = JSON.parse(localStorage.getItem("facts"))
     factLength = factArray.length
@@ -73,12 +96,24 @@ function renderFacts(){
     factsEl.appendChild(addedLine)
 }
 
-// Update facts
+// (v) update facts
 async function updateFact(){
 
     var countDataByType = await getDataByType()
     factArray = formulateFacts(countDataByType)
     localStorage.setItem("facts", JSON.stringify(factArray));
+
+}
+
+// (v) get planet data
+async function getPlanetData(){
+    
+    for (i in planetArray){
+        var singlePlanet = planetArray[i]
+        var thisPlanetData = await getSinglePlanetData(singlePlanet)
+        var thisPlanetKey = singlePlanet+'data'
+        localStorage.setItem(thisPlanetKey, JSON.stringify(thisPlanetData));
+    }
 
 }
 
@@ -121,55 +156,13 @@ function oneCard (str) {
         <p class='centered'>${str}</p>
     </div>
     `
+    
     thisCard.innerHTML = thisInnerHTMLContent
     cardsParent.appendChild(thisCard)
-}
 
-// (v) Get the position of a element with id = str
-function getPos (str){
-    var posArray = [0,0,0]
-    var sampleEl = document.getElementById(str)
-    var foundRectangle = sampleEl.getBoundingClientRect()
-    var width = foundRectangle.right - foundRectangle.left
-    posArray[0] = foundRectangle.left;
-    posArray[1] = foundRectangle.top;
-    return posArray
-}
+    var createThisBtn = document.getElementById(str)
+    createThisBtn.addEventListener('click', renderPlanetModal)
 
-// Render a click me hint over the indicated location
-function giveHint(hintLocation){
-    console.log(hintLocation)
-    var hint = document.createElement('div')
-    hint.innerHTML = '<p>Click to read more ... </p>'
-    hint.setAttribute('id','hint')
-    hint.style.position='absolute'
-    hint.style.left = hintLocation[0]+10+'px'
-    hint.style.top = hintLocation[1]-20+'px'
-    cardPage.appendChild(hint)
-}
-
-// Render Modal card
-function modalCard(){
-    var modalCardIH = `
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">Modal title</p>
-                <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-                afdsaasdfad
-            </section>
-            <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
-                <button class="button">Cancel</button>
-            </footer>
-        </div>
-    `
-    var modalCard = document.createElement('div')
-    modalCard.innerHTML=modalCardIH
-    modalCard.setAttribute('class','modal')
-    cardPage.appendChild(modalCard)
 }
 
 function displayModal(){
@@ -180,7 +173,30 @@ function closeModal(){
     planetModal.setAttribute('class','modal')
 }
 
-function renderPlanetModal(){
+//HERE 
+function renderPlanetModal(event){
+    event.preventDefault()
+
+    singlePlanetDataEl.innerHTML = ''
+    planetModalTitleEl.innerHTML = ''
+
+    thisPlanet = event.target.getAttribute('id')
+
+    planetModalTitleEl.innerHTML = thisPlanet
+
+    thisKey = thisPlanet+'data'
+    thisPlanetData = JSON.parse(localStorage.getItem(thisKey))
+    singlePlanetDataEl.innerHTML = `
+    <p>Aphelion:${thisPlanetData.aphelion} km</p>
+    <p>Perihelion:${thisPlanetData.perihelion} km</p>
+    <p>Average Temperature:${thisPlanetData.avgTemp} F</p>
+    <p>Density:${thisPlanetData.density} g/cm^3 </p>
+    <p>Equatorial Radius:${thisPlanetData.equaRadius}</p>
+    <p>gravity:${thisPlanetData.gravity} m/s²</p>
+    <p>Mass:${thisPlanetData.massValue} × 10^24 kg</p>
+    `
+
+    planetModal.setAttribute('class','modal is-active')
 
 }
 
@@ -191,9 +207,12 @@ planetModalClose.addEventListener('click',closeModal)
 
 // Main program ========================================================================
 
-*    // Create buttons for each planet
+// Create buttons for each planet
 planetArray.forEach(planet => oneCard(planet))
 
+// get planets count
 updateFact()
-
+// render planet count every 6 seconds
 setInterval(renderFacts, 6000)
+
+
