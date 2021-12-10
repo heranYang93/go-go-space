@@ -2,7 +2,7 @@
 
   var nameText = document.getElementById("storedName");
   nameText.innerHTML = localStorage.getItem("name");
-  console.log(localStorage);
+  // console.log(localStorage);
 
 L.mapbox.accessToken =
   "pk.eyJ1IjoiaGFra2kxODEwIiwiYSI6ImNrd21reTdzajJjdjIyeG5zanY4M2FwN3UifQ._Y_FFA1j6916TXqVusZ6Lg";
@@ -32,7 +32,7 @@ function issData() {
     .then(function (data) {
       var lat = data.latitude;
       var lon = data.longitude;
-      console.log("iss data", data);
+      // console.log("iss data", data);
       issPan(lat, lon);
       // issPan2(lat, lon);
       
