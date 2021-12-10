@@ -60,7 +60,6 @@ Where is the ISS has used all the neccessary languages and tools in order to pro
 * Mohammad Hakki- [Github](https://github.com/Hakki1810).
 
 
-
 ## Link to the deployed application
 
 You can view the deployed application [here](https://heranyang93.github.io/go-go-space/).
@@ -70,3 +69,9 @@ You can view the deployed application [here](https://heranyang93.github.io/go-go
 You can access the Github repository [here](https://github.com/heranYang93/go-go-space).
 
 
+## Credits
+Earth background photo - universetoday.com
+People in space right now API - Developer: Natronics - http://api.open-notify.org/
+Where the ISS AT API - https://wheretheiss.at/w/developer
+Planets physical characteristics - https://api.le-systeme-solaire.net/en/
+Planets information and introduction - https://en.wikipedia.org/wiki/Main_Page
