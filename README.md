@@ -1,10 +1,10 @@
-# Where is the ISS
+# ISS Space Explorer
 
 ## Description
 
-Have you ever wondered where is the International Space Station (ISS) is? At what altitude is it in, or what speed is it travelling at or even if its close to you? Well the Web Application "Where is the ISS" offers all of these features and even more!
+Have you ever wondered where is the International Space Station (ISS) is? At what altitude is it in, or what speed is it travelling at or even if its close to you? Well the Web Application "ISS Space Explorer" offers all of these features and even more!
 
-Where is the ISS Web Application that gives its users the full access to monitor the ISS and also have access to the ISS's flight data. In additon, it also provides all the necessary information about the ISS and space such as the bulid of the space craft and current astronauts that are currently onboard the ISS.
+ISS Space Explorer Web Application that gives its users the full access to monitor the ISS and also have access to the ISS's flight data. In additon, it also provides all the necessary information about the ISS and space such as the bulid of the space craft and current astronauts that are currently onboard the ISS.
 
 The app offers a lot of features with a dynamic design such as a responsive UI, a navigation bar that lays out all of the information. This provides a user friendly experience to all the users.
 
@@ -36,7 +36,7 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 
 ## Technologies Used
 
-Where is the ISS has used all the neccessary languages and tools in order to provide a user-friendly interface that has smooth a interactability and efficiency.
+ISS Space Explorer has used all the neccessary languages and tools in order to provide a user-friendly interface that has smooth a interactability and efficiency.
 
 1- [HTML](https://html.com/).
 
