@@ -32,6 +32,7 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 10- Then the user is presented with a selection of all the planets in our solar system and cards are accompanied with each planet. Each card contains information about the planet. In addition, random facts about space are being presented to the user.
 
 ## Demonstration of the Web Application
+![Alt Text](./assets/media/ISS.gif)
 
 ## Technologies Used
 
@@ -70,8 +71,8 @@ You can access the Github repository [here](https://github.com/heranYang93/go-go
 
 
 ## Credits
-Earth background photo - universetoday.com
-People in space right now API - Developer: Natronics - http://api.open-notify.org/
-Where the ISS AT API - https://wheretheiss.at/w/developer
-Planets physical characteristics - https://api.le-systeme-solaire.net/en/
-Planets information and introduction - https://en.wikipedia.org/wiki/Main_Page
+* Earth background photo - universetoday.com
+* People in space right now API - Developer: Natronics - http://api.open-notify.org/
+* Where the ISS AT API - https://wheretheiss.at/w/developer
+* Planets physical characteristics - https://api.le-systeme-solaire.net/en/
+* Planets information and introduction - https://en.wikipedia.org/wiki/Main_Page
