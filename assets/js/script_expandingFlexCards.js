@@ -61,7 +61,7 @@ async function getSinglePlanetData(str){
 
     var thisPlanetData
     var singlePlanetDataURL = `https://api.le-systeme-solaire.net/rest/bodies/${str}`
-
+    
     var temp = await fetch(singlePlanetDataURL)
 
     .then(function(response){
@@ -89,7 +89,7 @@ function formulateFacts(countData){
         var thisType = countData[i].id
         var thisCount = countData[i].knownCount
         var thisUpdateDate = countData[i].updateDate
-        var thisString = `Until ${thisUpdateDate}, ${thisCount} ${thisType}s have been discovered`
+        var thisString = `Until ${thisUpdateDate}, ${thisCount} ${thisType}s have been discovered ...`
         factArray.push(thisString)
     }
 
@@ -115,11 +115,6 @@ async function updateFact(){
     factArray = formulateFacts(countDataByType)
     localStorage.setItem("facts", JSON.stringify(factArray));
 
-}
-
-// (v) get planet data
-async function getPlanetData(){
-    
     for (i in planetArray){
         var singlePlanet = planetArray[i]
         var thisPlanetData = await getSinglePlanetData(singlePlanet)
@@ -155,17 +150,13 @@ async function getDataByPlanet(planetStr){
 
 // (v) create single card for one planet
 function oneCard (str) {
-    var thisCard = document.createElement('li')
+    var thisCard = document.createElement('div')
     var pictureLink = `../assets/media/${str}.jpg`
     var thisInnerHTMLContent = `
     <div class = 'card-image'>
         <figure class='image is-1by1'>
             <img src='${pictureLink}' id='${str}' alt='A picture of ${str}'>
         </figure>
-    </div>
-
-    <div class = 'card-content'>
-        <p class='centered'>${str}</p>
     </div>
     `
     
@@ -198,7 +189,7 @@ function renderPlanetModal(event){
 
     thisKey = thisPlanet+'data'
     thisPlanetData = JSON.parse(localStorage.getItem(thisKey))
-    
+
     var thisPicLink = `../assets/media/${thisPlanet}.jpg`
     singlePlanetModalImg.innerHTML = `
     <img src='${thisPicLink}' id='${thisPlanet+'modalPicture'}' alt='A picture of ${thisPlanet}'>
@@ -221,7 +212,6 @@ function renderPlanetModal(event){
     var backBtnEl = document.getElementById('closeModal')
     backBtnEl.addEventListener('click',closeModal)
 }
-
 
 // Main program ========================================================================
 
