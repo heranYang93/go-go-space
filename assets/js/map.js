@@ -70,12 +70,12 @@ var iss = L.marker([0, 0], { icon: spaceIcon }).addTo(map);
 
 var updateData = setInterval(issData,1500)
 
-var checkbox = document.querySelector(".togglebutton");
+// var checkbox = document.querySelector(".togglebutton");
 
-checkbox.addEventListener('change', function() {
-  if (this.checked) {
-    console.log("Checkbox is checked..");
-  } else {
-    console.log("Checkbox is not checked..");
-  }
-});
+// checkbox.addEventListener('change', function() {
+//   if (this.checked) {
+//     console.log("Checkbox is checked..");
+//   } else {
+//     console.log("Checkbox is not checked..");
+//   }
+// });

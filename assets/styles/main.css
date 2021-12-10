@@ -134,6 +134,20 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+
+.crewmatelist > li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px rgb(214, 214, 214);
+}
+
+
+.flightdatalist > li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px rgb(214, 214, 214);
+}
+
 .astrobutton {
   background-color: transparent;
   border: none;
@@ -223,25 +237,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.crewmateslisttitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  padding-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-li {
+.datatitle {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: solid 1px rgb(214, 214, 214);
-}
-
-.datatitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  padding-bottom: 20px;
-  font-size: 1.5rem;
-  line-height: 30px;
 }
 
 .gradientbreak {
@@ -260,6 +259,7 @@ li {
   height: 100px;
   background-color: black;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .darkplanet {
