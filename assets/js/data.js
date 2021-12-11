@@ -4,11 +4,8 @@ function issData() {
         return response.json();
       })
       .then(function (data) {
-        console.log("iss data", data);
         var lat = data.latitude;
         var lon = data.longitude;
-        console.log(lat);
-        console.log(lon);
       });
   };
   

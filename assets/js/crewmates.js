@@ -26,10 +26,6 @@ async function CrewmatesData() {
       crewmate9 = data.people[4].name
       crewmate10 = data.people[5].name
       
-      // console.log(data);
-     
-
-      
       document.querySelector("#mate1").textContent =
         crewmate1;
         document.querySelector("#mate2").textContent =
@@ -51,9 +47,6 @@ async function CrewmatesData() {
         // document.querySelector("#mate10").textContent =
         // crewmate10;
         
-
-
-
 
     })
 

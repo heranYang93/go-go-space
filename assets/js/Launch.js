@@ -6,5 +6,3 @@ function storeName() {
 }
 
 startBtn.addEventListener("click", storeName);
-
-console.log(localStorage);
