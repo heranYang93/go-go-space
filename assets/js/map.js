@@ -22,7 +22,7 @@ L.tileLayer(
   }
 ).addTo(map);
 
-function issData() {
+function getIssData() {
 
   fetch(`https://api.wheretheiss.at/v1/satellites/25544`)
 
@@ -33,7 +33,7 @@ function issData() {
     .then(function (data) {
       var lat = data.latitude;
       var lon = data.longitude;
-      issPan(lat, lon);
+      panIss(lat, lon);
 
       document.querySelector(".latdata").textContent =
         "Latitude: " + data.latitude;
@@ -46,7 +46,7 @@ function issData() {
     });
 }
 
-function issPan(lat, lon) {
+function panIss(lat, lon) {
   iss.setLatLng([lat, lon]);
   map.panTo([lat, lon], (animate = true));
 }
@@ -60,4 +60,4 @@ var spaceIcon = L.icon({
 
 var iss = L.marker([0, 0], { icon: spaceIcon }).addTo(map);
 
-var updateData = setInterval(issData, 1500);
+var updateData = setInterval(getIssData, 1500);

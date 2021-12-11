@@ -149,7 +149,7 @@ async function getDataByPlanet(planetStr){
 }
 
 // (v) create single card for one planet
-function oneCard (str) {
+function makeOneCard (str) {
     var thisCard = document.createElement('div')
     var pictureLink = `../assets/media/${str}.jpg`
     var thisInnerHTMLContent = `
@@ -216,7 +216,7 @@ function renderPlanetModal(event){
 // Main program ========================================================================
 
 // Create buttons for each planet
-planetArray.forEach(planet => oneCard(planet))
+planetArray.forEach(planet => makeOneCard(planet))
 
 // get planets count
 updateFact()
