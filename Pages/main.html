@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explore Space</title>
-    <link rel="stylesheet" href="../assets/styles/style_expandingFlexCards.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="../assets/styles/soyuz.css">
-    <link rel="stylesheet" href="../assets/styles/main.css" />
-    <link rel="stylesheet" href="../assets/styles/modalcard.css">
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Space</title>
+  <link rel="stylesheet" href="../assets/styles/style_expandingFlexCards.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="../assets/styles/soyuz.css">
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+  <link rel="stylesheet" href="../assets/styles/modalcard.css">
+  <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-    
-   
-    <link
-      href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/styles/nav.css">
-    <link rel="icon" type="image/x-icon" href="../assets/media/favicon.ico">
-    
-
-  </head>
-  
-  <body>
-
-    <!-- ----------------------------------------------------- -->
-
-    <nav class="navbar">
-
-     
-      <div class="burger">
-          <a class="menu-link" href="#"><svg id="burger" data-name="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.67 70.67"><title>menu</title><line x1="3.92" y1="3.92" x2="87.74" y2="3.92" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7.84"/><line x1="3.92" y1="35.33" x2="61.38" y2="35.33" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7.84"/><line x1="3.92" y1="66.75" x2="87.74" y2="66.75" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7.84"/><line x1="75.68" y1="35.33" x2="87.74" y2="35.33" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7.84"/></svg></a>
-      </div>
-</nav>
+    rel="stylesheet" />
 
 
-<div class="menu-overlay">
-  <nav class="overlay-menu">            
+  <link href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles/nav.css">
+  <link rel="icon" type="image/x-icon" href="../assets/media/favicon.ico">
+
+
+</head>
+
+<body>
+
+  <!-- ----------------------------------------------------- -->
+
+  <nav class="navbar">
+
+
+    <div class="burger">
+      <a class="menu-link" href="#"><svg id="burger" data-name="burger" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 91.67 70.67">
+          <title>menu</title>
+          <line x1="3.92" y1="3.92" x2="87.74" y2="3.92" fill="none" stroke="#231f20" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="7.84" />
+          <line x1="3.92" y1="35.33" x2="61.38" y2="35.33" fill="none" stroke="#231f20" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="7.84" />
+          <line x1="3.92" y1="66.75" x2="87.74" y2="66.75" fill="none" stroke="#231f20" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="7.84" />
+          <line x1="75.68" y1="35.33" x2="87.74" y2="35.33" fill="none" stroke="#231f20" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="7.84" />
+        </svg></a>
+    </div>
+  </nav>
+
+
+  <div class="menu-overlay">
+    <nav class="overlay-menu">
       <div>
 
-         
-      <ul class="list">
+
+        <ul class="list">
           <li><a class="nav-links1" href="#soyuzid">Spaceships</a></li>
           <li><a class="nav-links2" href="#crewmatescontainerid">Crewmates</a></li>
           <li><a class="nav-links3" href="#mapsectionid">ISS location</a></li>
           <li><a class="nav-links4" href="#planetcardholder">Explore the planets</a></li>
         </ul>
       </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
-<!-- ------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------ -->
 
-    <main>
-      <div class="abyss">
-        <h1 class="abysstext">ENTER THE ABYSS</h1>
-        <img class="darkplanet" src="../assets/media/background2.jpg" alt="" />
-      </div>
+  <main>
+    <div class="abyss">
+      <h1 class="abysstext">ENTER THE ABYSS</h1>
+      <img class="darkplanet" src="../assets/media/background2.jpg" alt="" />
+    </div>
 
-      <div class="issspace">
-        <div id="soyuzid" class="soyuzcontainer">
+    <div class="issspace">
+      <div id="soyuzid" class="soyuzcontainer">
 
 
 
-          
 
-           <div class="svgarrow">
-<svg version="1.1"
-xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-x="0px" y="0px" width="150.6px" height="151.5px" viewBox="0 0 150.6 151.5" style="enable-background:new 0 0 150.6 151.5;"
-xml:space="preserve">
-<style type="text/css">
-.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-</style>
-<defs>
-</defs>
-<path class="st0" d="M146.9,106.4c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.4,0-0.6c1.3-4.4,2.2-9,2.7-14c0.4-3.9,0.5-7.8,0.5-11.7
+
+        <div class="svgarrow">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="150.6px" height="151.5px"
+            viewBox="0 0 150.6 151.5" style="enable-background:new 0 0 150.6 151.5;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #FFFFFF;
+              }
+            </style>
+            <defs>
+            </defs>
+            <path class="st0" d="M146.9,106.4c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.4,0-0.6c1.3-4.4,2.2-9,2.7-14c0.4-3.9,0.5-7.8,0.5-11.7
 c0.1-0.1,0.1-0.2,0.1-0.3c0.1-0.3,0-0.5-0.2-0.7c-0.8-40-23.9-80-75.8-78.5l0,0c-40.4,1.1-54.4,21.7-61.8,32
 C-6.7,59.2-2.8,100.7,17,126.7c14.2,18.7,37.6,25.5,60.2,24.8C109.3,150.5,137.4,136.1,146.9,106.4L146.9,106.4z M145.2,106.1
 c-4-1.7-7.8-3.9-11.9-5.3c-4.8-1.7-10.1-1.9-14.7-4.3c-3.5-1.8-6.6-4.3-9.7-6.2c-4.4-2.7-8.9-4.3-14.8-0.4
@@ -104,22 +112,24 @@ C23.2,22.4,23,22.3,22.9,22L22.9,22z M128,22.1C128,22.1,127.9,22.1,128,22.1c-2.2,
 c-0.7,2-0.4,4.2,0.3,6.5c0.8,2.4,2,4.9,3,7.3c1.1,2.6,2,5.2,2.2,7.6c0.2,2.9-0.6,6.3-1,9.7c-0.4,3.2-0.4,6.3,1.3,8.7
 c1.1,1.6,2.9,2.4,4.8,2.8c2.1,0.4,4.3,0.5,6.3,0.8c5.4,0.8,10.4,3.5,15.6,5.2C148.2,57.3,141.6,36.7,128,22.1L128,22.1z M108.3,7.9
 c-9.4-4.3-20.6-6.6-33.6-6.2h0c-3.1,0.1-6,0.3-8.7,0.6c3.7,4.8,6,10.7,10,15.1c4.1,4.5,9.5,7.5,13.7,12c1.4,1.5,3.2,5,5.5,6.9
-c1.2,1,2.6,1.5,4.1,0.4c2.1-1.5,3-3.7,3.4-6c0.5-2.6,0.5-5.3,0.9-7.7C104.3,17.7,106.4,12.8,108.3,7.9L108.3,7.9z"/>
-</svg>
-          </div>
+c1.2,1,2.6,1.5,4.1,0.4c2.1-1.5,3-3.7,3.4-6c0.5-2.6,0.5-5.3,0.9-7.7C104.3,17.7,106.4,12.8,108.3,7.9L108.3,7.9z" />
+          </svg>
+        </div>
 
-          <div class="svgarrowtwo">
+        <div class="svgarrowtwo">
 
-<svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="164.1px" height="120.6px" viewBox="0 0 164.1 120.6" style="enable-background:new 0 0 164.1 120.6;"
-	 xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-</style>
-<defs>
-</defs>
-<path class="st0" d="M25.5,63c-0.1,0-0.2,0-0.4,0c-6.1,2-12,5.8-16.3,10.5c-3.4,3.8-7.3,10.3-8.4,16.5c-0.7,3.8-0.4,7.5,1.6,10.3
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="164.1px" height="120.6px"
+            viewBox="0 0 164.1 120.6" style="enable-background:new 0 0 164.1 120.6;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+              }
+            </style>
+            <defs>
+            </defs>
+            <path class="st0" d="M25.5,63c-0.1,0-0.2,0-0.4,0c-6.1,2-12,5.8-16.3,10.5c-3.4,3.8-7.3,10.3-8.4,16.5c-0.7,3.8-0.4,7.5,1.6,10.3
 	c1.3,1.9,3.4,3.4,6.5,4.4c6.8,2,14.1,1.4,21.5-0.5c3.1-0.8,6.2-1.9,9.3-3c11.3,14.5,29.8,19.9,47.6,19.3
 	c29.6-0.9,54.8-16.1,57.9-47.9c0.7-7.3,0.5-14.9-0.7-22.2c3.6-2.2,7.1-4.5,10.2-7.3c2.3-2,4.3-4.4,5.9-6.9
 	c4.6-6.9,4.8-11.9,2.6-15.2c-2-3.1-6.1-4.8-11-5.4c-6.9-0.8-15.3,0.8-20.9,3.9C121,7.4,106-0.6,84.8,0C52.6,0.9,41.5,17.3,35.6,25.5
@@ -155,97 +165,109 @@ c1.2,1,2.6,1.5,4.1,0.4c2.1-1.5,3-3.7,3.4-6c0.5-2.6,0.5-5.3,0.9-7.7C104.3,17.7,10
 	C80.8,30.8,79.2,28.8,76.9,29.1L76.9,29.1z M102.2,21.9L102.2,21.9c-0.3-0.1-0.6,0.1-0.8,0.3l-0.1,0.1c-4.7,6.5,3,14.2,9.3,10.6
 	c3.4-2,2.7-5.8,0.4-8.4C108.7,22,105.4,21.5,102.2,21.9L102.2,21.9z M102.4,23.5c-3.3,5,2.6,10.8,7.4,8c2.4-1.4,1.6-4.1,0-5.9
 	C107.9,23.5,105.1,23.1,102.4,23.5L102.4,23.5z M72.5,2.9c-9,1.7-15.7,4.7-20.9,8.3c0.1,0.1,0.2,0.3,0.2,0.5c0.4,5.7,5.8,9,11.2,7.7
-	c3.5-0.8,6.9-3.3,8.9-6.5C73.8,9.8,74.4,6.2,72.5,2.9L72.5,2.9z"/>
-</svg>
+	c3.5-0.8,6.9-3.3,8.9-6.5C73.8,9.8,74.4,6.2,72.5,2.9L72.5,2.9z" />
+          </svg>
 
 
 
-         
+
 
 
 
 
         </div>
 
-          <div class="imgholder">
-            <button class="goButton"><img class="soyuzimg" src="../assets/media/soyuz2.png" /></button>
-          </div>
-          <div class="imgholder">
-            <button class="goButton2"><img class="issimg" src="../assets/media/ISSiso.png" /></button>
-          </div>
+        <div class="imgholder">
+          <button class="goButton"><img class="soyuzimg" src="../assets/media/soyuz2.png" /></button>
+        </div>
+        <div class="imgholder">
+          <button class="goButton2"><img class="issimg" src="../assets/media/ISSiso.png" /></button>
+        </div>
 
-          <div id="modalsoy" class="modal modal1">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">The Soyuz MS</p>
-                <button class="delete" aria-label="close"></button>
-              </header>
-              <section class="modal-card-body">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Soyuz_TMA-7_spacecraft2edit1.jpg/1920px-Soyuz_TMA-7_spacecraft2edit1.jpg" alt="">
-                <p class="cardpara">
-                  Soyuz is a series of
-                  spacecraft which has been in service since the 1960s, having made
-                  more than 140 flights. It was designed for the Soviet space
-                  program by the Korolev Design Bureau (now Energia). The Soyuz
-                  succeeded the Voskhod spacecraft and was originally built as part
-                  of the Soviet crewed lunar programs. It is launched on a Soyuz
-                  rocket from the Baikonur Cosmodrome in Kazakhstan. </p>
-                  <p class="cardpara">
+        <div id="modalsoy" class="modal modal1">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">The Soyuz MS</p>
+              <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Soyuz_TMA-7_spacecraft2edit1.jpg/1920px-Soyuz_TMA-7_spacecraft2edit1.jpg"
+                alt="">
+              <p class="cardpara">
+                Soyuz is a series of
+                spacecraft which has been in service since the 1960s, having made
+                more than 140 flights. It was designed for the Soviet space
+                program by the Korolev Design Bureau (now Energia). The Soyuz
+                succeeded the Voskhod spacecraft and was originally built as part
+                of the Soviet crewed lunar programs. It is launched on a Soyuz
+                rocket from the Baikonur Cosmodrome in Kazakhstan. </p>
+              <p class="cardpara">
                 Between the 2011 retirement of the Space Shuttle and the 2020 demo flight of
                 SpaceX Crew Dragon, the Soyuz served as the only means to make
                 crewed space flights and to reach the International Space Station,
                 for which it remains heavily used.</p>
-              </section>
-              <footer class="modal-card-foot"></footer>
-            </div>
-          </div>   
+            </section>
+            <footer class="modal-card-foot"></footer>
+          </div>
+        </div>
 
-          <!-- ----------------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------------- -->
 
-          <div id="modaliss" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">The ISS</p>
-                <button class="delete deleteTwo" aria-label="close"></button>
-              </header>
-              <section class="modal-card-body">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/International_Space_Station_after_undocking_of_STS-132.jpg/1200px-International_Space_Station_after_undocking_of_STS-132.jpg" alt="">
-                <p class="cardpara">
-                  The International Space Station (ISS) is a modular space station (habitable artificial satellite) in low Earth orbit. 
-                  It is a multinational collaborative project involving five participating space agencies: NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).
-                  The ownership and use of the space station is established by intergovernmental treaties and agreements.
+        <div id="modaliss" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">The ISS</p>
+              <button class="delete deleteTwo" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/International_Space_Station_after_undocking_of_STS-132.jpg/1200px-International_Space_Station_after_undocking_of_STS-132.jpg"
+                alt="">
+              <p class="cardpara">
+                The International Space Station (ISS) is a modular space station (habitable artificial satellite) in low
+                Earth orbit.
+                It is a multinational collaborative project involving five participating space agencies: NASA (United
+                States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).
+                The ownership and use of the space station is established by intergovernmental treaties and agreements.
 
-                  <br>
-                  <br>
-                  The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology,
-                   physics, and other fields.The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to 
-                   the Moon and Mars.</p>
-              </section>
-              <footer class="modal-card-foot"></footer>
-            </div>
-          </div>   
+                <br>
+                <br>
+                The station serves as a microgravity and space environment research laboratory in which scientific
+                research is conducted in astrobiology, astronomy, meteorology,
+                physics, and other fields.The ISS is suited for testing the spacecraft systems and equipment required
+                for possible future long-duration missions to
+                the Moon and Mars.
+              </p>
+            </section>
+            <footer class="modal-card-foot"></footer>
+          </div>
+        </div>
 
-          
+
 
       </div>
 
       <div class="break"></div>
 
       <div id="crewmatesID" class="crewmates">
-       
-      <div class="svgplanetone">
-<svg version="1.1"
-xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-x="0px" y="0px" width="150.4px" height="151.5px" viewBox="0 0 150.4 151.5" style="enable-background:new 0 0 150.4 151.5;"
-xml:space="preserve">
-<style type="text/css">
-.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-</style>
-<defs>
-</defs>
-<path class="st0" d="M74.6,0c-40.4,1.1-54.4,21.7-61.8,32c-19.5,27.2-15.6,68.6,4.1,94.6c14.2,18.7,37.6,25.5,60.2,24.8
+
+        <div class="svgplanetone">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="150.4px" height="151.5px"
+            viewBox="0 0 150.4 151.5" style="enable-background:new 0 0 150.4 151.5;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #FFFFFF;
+              }
+            </style>
+            <defs>
+            </defs>
+            <path class="st0" d="M74.6,0c-40.4,1.1-54.4,21.7-61.8,32c-19.5,27.2-15.6,68.6,4.1,94.6c14.2,18.7,37.6,25.5,60.2,24.8
 c37.2-1.1,68.8-20.2,72.7-60.1C154.1,47.5,132-1.6,74.6,0L74.6,0L74.6,0z M83.5,149.5c-2.9-7-7.6-11.2-12.7-11.7
 c-5.1-0.5-10.4,2.8-14.3,10.4c0,0,0,0,0,0c6.8,1.3,13.7,1.8,20.7,1.6C79.3,149.8,81.4,149.7,83.5,149.5L83.5,149.5z M107.5,144.2
 C107.5,144.2,107.5,144.2,107.5,144.2c-3.9-5.3-9.7-8.4-13.9-13.2c-4.4-5.1-6.8-11.6-11-16.9c-1.5-1.8-3.6-3.9-6-5.2
@@ -294,21 +316,23 @@ C78,4.6,78.1,3.1,78.7,1.6L78.7,1.6z M38.7,10.1C29.4,15,23.3,21.2,19,26.5c8.3-0.7
 c1.4,0.4,5.7,1.3,9.1,1.2c1,0,2-0.2,2.7-0.5c0.5-0.2,0.9-0.6,1-1.1c-0.1-0.1-0.6-0.6-1-1c-2-1.5-5.6-3.5-7.4-4.5
 C56.9,21.8,46.7,18.7,38.7,10.1L38.7,10.1z M80.4,1.7c0,0,0,0.1-0.1,0.1c-0.6,1.3-0.8,2.6-0.5,3.7c0.3,1.1,1.1,2.1,2.4,2.7
 c1.7,0.9,3.6,1.1,5.6,1.3c2.1,0.2,4.3,0.3,6.3,1c7.5,2.5,14.4,6.8,22,8.9c1.4,0.4,3.1,0.7,4.8,0.7c1.4,0,2.8-0.3,3.9-1.2
-C114,8.9,99.4,2.3,80.4,1.7L80.4,1.7z"/>
-</svg>
+C114,8.9,99.4,2.3,80.4,1.7L80.4,1.7z" />
+          </svg>
 
         </div>
         <div class="svgplanettwo">
-<svg version="1.1"
-xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-x="0px" y="0px" width="164.1px" height="120.6px" viewBox="0 0 164.1 120.6" style="enable-background:new 0 0 164.1 120.6;"
-xml:space="preserve">
-<style type="text/css">
-.st0{fill-rule:evenodd;clip-rule:evenodd;}
-</style>
-<defs>
-</defs>
-<path class="st0" d="M25.5,63c-0.1,0-0.2,0-0.4,0c-6.1,2-12,5.8-16.3,10.5c-3.4,3.8-7.3,10.3-8.4,16.5c-0.7,3.8-0.4,7.5,1.6,10.3
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="164.1px" height="120.6px"
+            viewBox="0 0 164.1 120.6" style="enable-background:new 0 0 164.1 120.6;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+              }
+            </style>
+            <defs>
+            </defs>
+            <path class="st0" d="M25.5,63c-0.1,0-0.2,0-0.4,0c-6.1,2-12,5.8-16.3,10.5c-3.4,3.8-7.3,10.3-8.4,16.5c-0.7,3.8-0.4,7.5,1.6,10.3
 c1.3,1.9,3.4,3.4,6.5,4.4c6.8,2,14.1,1.4,21.5-0.5c3.1-0.8,6.2-1.9,9.3-3c11.3,14.5,29.8,19.9,47.6,19.3
 c29.6-0.9,54.8-16.1,57.9-47.9c0.7-7.3,0.5-14.9-0.7-22.2c3.6-2.2,7.1-4.5,10.2-7.3c2.3-2,4.3-4.4,5.9-6.9
 c4.6-6.9,4.8-11.9,2.6-15.2c-2-3.1-6.1-4.8-11-5.4c-6.9-0.8-15.3,0.8-20.9,3.9c-6.7-8.4-16-14.8-28-17.8c-0.1-0.1-0.3-0.2-0.4-0.2
@@ -336,13 +360,13 @@ c6.8-4.3,8.6-9.5,6.9-12.9c-1.7-3.3-6.6-4.6-12.9-1.3C138.1,31.2,140.1,35.9,141.6,
 c-3.2,0.1-6.2,0.3-9.1,0.7l0,0c-2.5,5.9-7.4,9.5-13.1,11.6c-5.6,2.1-11.9,2.9-17.3,3.1c-0.2,0-0.5-0.1-0.6-0.2
 c-3.5,3.5-5.9,7-7.8,9.6c-1.8,2.5-3.3,5.1-4.6,7.9c0.1,0,0.1,0,0.2,0c17.5-1.5,36.1-6.2,48.6-19.3c0.1-0.1,0.3-0.2,0.5-0.2
 c0.3-0.3,0.6-0.7,0.9-1.1l4.7-9.5C87.5,3.4,87.7,2.5,87.8,1.6L87.8,1.6z M73.9,2.7c-13.2,2.2-21.8,7.4-27.7,12.8
-c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
-</svg>
+c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z" />
+          </svg>
 
         </div>
         <div id="crewmatescontainerid" class="crewmateslistholder">
           <ul class="crewmatelist">
-            <h2 class="datatitle">Now lets meet your  <br> crewmates astronaut <span id="storedName"></span></h2>
+            <h2 class="datatitle">Now lets meet your <br> crewmates astronaut <span id="storedName"></span></h2>
             <li><span id="mate1"></span></li>
             <li><span id="mate2"></span></li>
             <li><span id="mate3"></span></li>
@@ -350,15 +374,16 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
             <li><span id="mate5"></span></li>
             <li><span id="mate6"></span></li>
             <li><span id="mate7"></span></li>
-              
-            
-           
-            
+
+
+
+
           </ul>
         </div>
 
         <div class="astronautimgholder">
-          <button class="astrobutton"><img class="astronautimgline" src="../assets/media/astronaut.jpeg" alt="image of a astronaut"></button>
+          <button class="astrobutton"><img class="astronautimgline" src="../assets/media/astronaut.jpeg"
+              alt="image of a astronaut"></button>
         </div>
 
         <div id="modalastro" class="modal">
@@ -369,29 +394,36 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
               <button class="delete deleteThree" aria-label="close"></button>
             </header>
             <section class="modal-card-body">
-                <img src="https://www.quickanddirtytips.com/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/images/19571/astronaut-in-space-compressor.png?itok=pcZiohU8" alt="">
+              <img
+                src="https://www.quickanddirtytips.com/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/images/19571/astronaut-in-space-compressor.png?itok=pcZiohU8"
+                alt="">
               <p class="cardpara">
-                An astronaut (from the Greek "astron" meaning "star", and "nautes",meaning "sailor") is a person trained,
-                 equipped, and deployed by a human spaceflight program to serve as a commander or crew member aboard a spacecraft. 
-                 Although generally reserved for professional space travelers, the terms are sometimes applied to anyone who travels into space, 
-                 including scientists, politicians, journalists and tourists.</p>
+                An astronaut (from the Greek "astron" meaning "star", and "nautes",meaning "sailor") is a person
+                trained,
+                equipped, and deployed by a human spaceflight program to serve as a commander or crew member aboard a
+                spacecraft.
+                Although generally reserved for professional space travelers, the terms are sometimes applied to anyone
+                who travels into space,
+                including scientists, politicians, journalists and tourists.</p>
 
-                 <br>
+              <br>
 
-                 <p class="cardpara">
-                  Soviet cosmonaut Yuri Gagarin becomes the first man in space. On April 12, 1961, aboard the spacecraft Vostok 1. 
-                 </p>
+              <p class="cardpara">
+                Soviet cosmonaut Yuri Gagarin becomes the first man in space. On April 12, 1961, aboard the spacecraft
+                Vostok 1.
+              </p>
 
-                 <br>
+              <br>
 
-                 <p class="cardpara">
-                  On July 20, 1969, Neil Armstrong became the first human to step on the moon. He and Aldrin walked around for three hours. 
-                  They did experiments. They picked up bits of moon dirt and rocks.
-                 </p>
+              <p class="cardpara">
+                On July 20, 1969, Neil Armstrong became the first human to step on the moon. He and Aldrin walked around
+                for three hours.
+                They did experiments. They picked up bits of moon dirt and rocks.
+              </p>
             </section>
             <footer class="modal-card-foot"></footer>
           </div>
-        </div>   
+        </div>
       </div>
 
       <div class="gradientbreak"></div>
@@ -413,40 +445,40 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
         </div>
         <div id="map" class="mapholder"></div>
       </div>
-      
+
       <div id="planetcardholder" class="planetcardholder">
-      
+
         <section id="facts"></section>
-      
+
         <section id="hint">Click below to learn about planets in solar system</section>
 
         <div id="cardList"></div>
-      
+
         <div id='planetModal' class="modal">
           <div class="modal-background"></div>
-      
+
           <div class="modal-card">
-      
+
             <header id='planetModalHead' class="modal-card-head">
               <p id='planetModalTitle' class="modal-card-title">Modal title</p>
             </header>
-      
+
             <section id='planetModalContent' class="modal-card-body">
               <div id='singlePlanetDataImg'></div>
               <div id='singlePlanetExplanation'></div>
               <div id='singlePlanetData'></div>
             </section>
-      
+
             <footer id='planetModalFooter' class="modal-card-foot">
               <button id='closeModal' class="button">Back</button>
             </footer>
-      
+
           </div>
-      
+
         </div>
-      
+
       </div>
-      
+
       <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
       <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
       <script src="../assets/js/modalscript.js"></script>
@@ -454,6 +486,7 @@ c5.1-0.3,10.8-1,15.9-2.9C67.1,10.6,71.5,7.6,73.9,2.7L73.9,2.7z"/>
       <script src="../assets/js/crewmates.js"></script>
       <script src="../assets/js/menu.js"></script>
       <script src="../assets/js/script_expandingFlexCards.js"></script>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
