@@ -2,7 +2,7 @@
 // break {
 
 
-async function CrewmatesData() {
+async function getCrewmatesData() {
   var crewmate1
   // var link = "http://api.open-notify.org/astros.json"
   var link = "https://course-anywhere.herokuapp.com/http://api.open-notify.org/astros.json"
@@ -60,7 +60,7 @@ async function CrewmatesData() {
 }
 
 async function getcrewmate(){
-  var thiscrewmate = await CrewmatesData()
+  var thiscrewmate = await getCrewmatesData()
 }
 
 getcrewmate()
