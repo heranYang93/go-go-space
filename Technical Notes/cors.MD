@@ -1,1 +1,0 @@
-use this link to access CORS - https://cors-anywhere.herokuapp.com/corsdemo
