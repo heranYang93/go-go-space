@@ -33,6 +33,7 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 
 ## Demonstration of the Web Application
 ![Alt Text](./assets/media/ISS.gif)
+[![Image from Gyazo](https://i.gyazo.com/f1d382ecee651249aedac72b1d49e45b.gif)](https://gyazo.com/f1d382ecee651249aedac72b1d49e45b)
 
 ## Technologies Used
 
