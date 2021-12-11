@@ -32,8 +32,7 @@ The app offers a lot of features with a dynamic design such as a responsive UI, 
 10- Then the user is presented with a selection of all the planets in our solar system and cards are accompanied with each planet. Each card contains information about the planet. In addition, random facts about space are being presented to the user.
 
 ## Demonstration of the Web Application
-![Alt Text](./assets/media/ISS.gif)
-[![Image from Gyazo](https://i.gyazo.com/f1d382ecee651249aedac72b1d49e45b.gif)](https://gyazo.com/f1d382ecee651249aedac72b1d49e45b)
+[GIF demo](./assets/media/ISS.gif)
 
 ## Technologies Used
 
